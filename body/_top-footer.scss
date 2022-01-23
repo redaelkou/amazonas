@@ -1,0 +1,177 @@
+.footer-wrapper{
+    background-color: white;
+    margin-top: 30px;
+    padding-top: 20px;
+    .top-footer{
+        display: flex;
+        border-top: 1px solid rgb(194, 193, 193);
+    }
+}
+$figs: 5;
+$width: 100%;
+@for $fig from 1 through 6 {
+    .fig-#{$fig}{
+        width: $width / $figs;
+        padding: 40px 10px;
+        background-color: white;
+        margin: 10px;
+        img{
+           max-width: 100%;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(72, 167, 223);
+        }
+        i{
+            color: orange;
+        }
+        p{
+            color: rgb(63, 62, 62);
+        }
+    }
+
+
+
+    .sign-in-personilized{
+        width: 100%;
+        height: 80px;
+        background-color: white;
+        align-self: center;
+        text-align: center;
+        padding-top: 20px;
+        button{
+            background-color: rgb(224, 163, 31);
+            padding: 8px 120px;
+            border-radius: 8px;
+            border: 1px solid rgb(99, 27, 1);
+            font-weight: bolder;
+        }
+        span{
+            font-size: 14px;
+        }
+        a{
+            font-size: 14px;
+            text-decoration: none;
+            color: rgb(57, 121, 218);
+            padding-left: 2px;
+        }
+        p{
+            padding-bottom: 10px;
+        }
+    }
+}
+
+
+
+
+.fig-1{
+    grid-area: fig-1;
+}
+.fig-2{
+    grid-area: fig-2;
+}
+.fig-3{
+    grid-area: fig-3;
+}
+.fig-4{
+    grid-area: fig-4;
+}
+.fig-5{
+    grid-area: fig-5;
+}
+.fig-6{
+    grid-area: fig-6;
+}
+
+
+
+@media only screen and (max-width: 716px){
+    .footer-wrapper{
+        background-color: white;
+        margin-top: 30px;
+        padding-top: 20px;
+        .top-footer{
+            display: flex;
+            flex-wrap: wrap;
+            border-top: 1px solid rgb(194, 193, 193);
+        }
+    }
+    $figs: 5;
+    $width: 100%;
+    @for $fig from 1 through 6 {
+        .fig-#{$fig}{
+            width: $width;
+            padding: 40px 10px;
+            background-color: white;
+            margin: 10px;
+            text-align: center;
+            img{
+               max-width: 100%;
+            }
+            a{
+                text-decoration: none;
+                color: rgb(72, 167, 223);
+            }
+            i{
+                color: orange;
+            }
+            p{
+                color: rgb(63, 62, 62);
+            }
+        }
+    
+    
+    
+        .sign-in-personilized{
+            width: 100%;
+            height: 80px;
+            background-color: white;
+            align-self: center;
+            text-align: center;
+            padding-top: 20px;
+            button{
+                background-color: rgb(224, 163, 31);
+                padding: 8px 60px;
+                border-radius: 8px;
+                border: 1px solid rgb(99, 27, 1);
+                font-weight: bolder;
+            }
+            span{
+                font-size: 14px;
+            }
+            a{
+                font-size: 14px;
+                text-decoration: none;
+                color: rgb(57, 121, 218);
+                padding-left: 2px;
+            }
+            p{
+                padding-bottom: 10px;
+            }
+        }
+    }
+    
+    
+    
+    
+    .fig-1{
+        grid-area: fig-1;
+    }
+    .fig-2{
+        grid-area: fig-2;
+    }
+    .fig-3{
+        grid-area: fig-3;
+    }
+    .fig-4{
+        grid-area: fig-4;
+    }
+    .fig-5{
+        grid-area: fig-5;
+    }
+    .fig-6{
+        grid-area: fig-6;
+    }
+    
+
+}

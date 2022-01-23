@@ -1,0 +1,204 @@
+
+
+
+.wrapper{
+    display: grid;
+    grid-template-areas: "div-1 div-2 div-3 div-4"
+     " div-5 div-6 div-7 div-8" 
+     "div-9 div-9 div-9 div-9 "
+      "div-10 div-10 div-10 div-10" 
+      "div-11 div-11 div-11 div-11"
+       "div-12 div-12 div-12 div-12";
+       grid-template-rows: auto auto auto auto auto auto auto;
+    gap: 16px;
+    padding: 0 20px;
+    margin-top: 200px;
+}
+.wrapper div{
+    background-color: #fff;
+    text-align: center;
+    padding: 0px 0 80px 0;
+    width: 100%;
+    position: relative;
+    h2{
+        background-color: rgb(20, 34, 59);
+        color: white;
+        padding: 10px 0;
+        &:hover{
+            color: orangered;
+        }
+    }
+    a{
+        text-decoration: none;
+        position: absolute;
+        top: 90%;
+        left: 10%;
+        background-color: blue;
+        color: white;
+        padding: 4px 10px;
+        border-radius: 4px;
+        &:hover{
+           background-color: white;
+           color: blue;
+           border: 2px solid blue;
+        }
+    }
+}
+
+h1{
+    text-align: left;
+    padding: 20px;
+}
+
+.wrapper div img{
+    max-width: 100%;
+}
+
+.div-1{
+    grid-area: div-1;
+}
+.div-2{
+    grid-area: div-2;
+
+}
+.div-3{
+    grid-area: div-3;
+
+}
+.div-4{
+    grid-area: div-4;
+    .sign-wrapper{
+        width: 100%;
+        h3{
+            color: rgb(37, 36, 36);
+            text-align: left;
+            padding-left: 20px;
+            padding-bottom: 20px;
+        }
+        p{
+            background-color: rgb(246, 250, 33);
+            text-align: center;
+            padding: 10px 0;
+            margin: 0 20px;
+            border-radius: 10px;
+        }
+    }
+
+}
+.div-5{
+    grid-area: div-5;
+
+}
+.div-6{
+    grid-area: div-6;
+
+}
+.div-7{
+    grid-area: div-7;
+
+}
+.div-8{
+    grid-area: div-8;
+}
+@for $img from 9 through 12{
+    .div-#{$img}{
+       img{
+           width: 23%;
+       }
+    }
+}
+.div-9{
+    grid-area: div-9;
+    position: relative;
+
+}
+.div-9 h1{
+    float: left;
+    position: absolute;
+    top: 0px;
+    left: 4%;
+    margin-bottom: 30px;
+}
+.div-10{
+    grid-area: div-10;
+
+}
+.div-11{
+    grid-area: div-11;
+
+}
+.div-12{
+    grid-area: div-12;
+
+}
+
+
+/*############################################### body media quiries ###################################*/
+
+body{
+   @media only screen and (max-width: 900px){
+
+    .wrapper{
+        position: relative;
+        display: grid;
+        grid-template-areas: "div-1 div-1 div-2 div-2"
+         " div-3 div-3 div-4 div-4" 
+         "div-5 div-5 div-6 div-6 "
+          "div-7 div-7 div-8 div-8" 
+          "div-9 div-9 div-10 div-10"
+           "div-11 div-11 div-12 div-12";
+           grid-template-rows: auto auto auto auto auto auto auto;
+        gap: 16px;
+        padding: 0 20px;
+        h1{
+            font-size: 18px;
+        }
+        img{
+            width: 100%;
+        }
+    }
+
+
+
+
+
+  
+
+}
+/*###################################################### media quiries 400px ###########################*/
+@media only screen and (max-width: 400px){
+
+    .wrapper{
+        position: relative;
+        display: grid;
+        grid-template-areas: "div-1 div-1 div-1 div-1"
+         " div-2 div-2 div-2 div-2" 
+         "div-3 div-3 div-3 div-3 "
+          "div-4 div-4 div-4 div-4" 
+          "div-5 div-5 div-5 div-5"
+           "div-6 div-6 div-6 div-6"
+           "div-7 div-7 div-7 div-7"
+           "div-8 div-8 div-8 div-8"
+           "div-9 div-9 div-9 div-9"
+           "div-10 div-10 div-10 div-10"
+           "div-11 div-11 div-11 div-11"
+           "div-12 div-12 div-12 div-12";
+           grid-template-rows: auto auto auto auto auto auto auto;
+        gap: 16px;
+        padding: 0 20px;
+        h1{
+            font-size: 26px;
+        }
+        img{
+            width: 100%;
+        }
+    }
+
+
+
+
+
+  
+
+}
+}

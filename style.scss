@@ -1,0 +1,40 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+//######################################### vars, MIXINS, AND EXTEND #################################### 
+@import './varaibles/vars';
+@import './varaibles/mixins/mixin';
+@import './varaibles/extend/extend';
+//######################################################################################## extend media
+@import './varaibles/media';
+@import './body/header';
+@import './body/nav';
+@import './body/body';
+@import './body/top-footer';
+@import './body/middle-footer';
+@import './body/bottom-footer';
+
+
+//###########################################################################################
+.delev{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(23, 43, 66);
+    color: white;
+    line-height: 50px;
+    padding-left: 20px;
+    font-weight: bolder;
+}
+/*############################################## bg image  ############################################*/
+body{
+    background-color: rgb(223, 220, 220);
+}
+#image{
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+}
+
